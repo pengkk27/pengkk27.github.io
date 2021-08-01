@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据结构 on pengkk27</title>
+    <link>https://pengkk27.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+    <description>Recent content in 数据结构 on pengkk27</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 01 Aug 2021 11:45:34 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>单链表</title>
+      <link>https://pengkk27.github.io/post/%E5%8D%95%E9%93%BE%E8%A1%A8/</link>
+      <pubDate>Sun, 01 Aug 2021 11:45:34 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E5%8D%95%E9%93%BE%E8%A1%A8/</guid>
+      <description>单链表特性分析  链表是一种有序的列表。他是以节点的形式来存储。所以在他的每一个节点里面，需要有一个next域来将其他的节点进行连接。 链表的存储在内存中并不是连续的。 链表分为有头节点的链表和没有头节点的链表。（这里我们讲有头节点的链表）。  单链表的代码分析 创建节点 这里我们使用一个学生类来作为我们的节点。 class Student { private String name; // 学生的姓名  private int id; // 学生的学号  private Student next; // 节点的next域  public Student(String name, int id) { this.name = name; this.id = id; } @Override public String toString() { return &amp;#34;Student{&amp;#34; + &amp;#34;name=&amp;#39;&amp;#34; + name + &amp;#39;\&amp;#39;&amp;#39; + &amp;#34;, id=&amp;#34; + id + &amp;#39;}&amp;#39;; } } 然后我们来写一个链表类，命名为LinkedList，并且在链表类中创建一个头节点，方便我们对链表进行操作。 class LinkedList { private Student head = new Student(&amp;#34;&amp;#34;, 0); } 接着我们就要在这个链表类中添加操作链表的方法了。  因为每次操作链表的时候，头节点是不可以移动的，所以我们在方法中定义一个辅助节点来对链表更方便的操作。 其中的while循环用来遍历节点，直到找到需要操作的节点  添加节点 直接在链表结尾添加节点 // 这个插入方法不会考虑每个节点中的编号的顺序。直接将新的节点插入到最后。  public void add(Student student) { Student temp = head; while (true) { if (temp.</description>
+    </item>
+    
+    <item>
+      <title>循环队列</title>
+      <link>https://pengkk27.github.io/post/%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97/</link>
+      <pubDate>Sun, 01 Aug 2021 11:44:49 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97/</guid>
+      <description>为了防止直接使用数组来实现一个队列中的缺点：
+ 队列（数组）只能使用一次。在队列中存放数据，取出数据后的空间不能再次使用。  我们可以使用循环队列。
+ 循环队列，我们通过这个名称不觉的联想到一个圆。所以，我们不妨就把它当作一个圆形来看。 这个时候又出现了一个问题：如何用代码来实现这个圆形呢？ 接下来就要引出一个运算符：% —— 求模
+ 通过取模运算，我们将原来的判断条件进行一个修改。
+  判断队列是否已满：( rear + 1 ) % maxSize == front
+当队尾的下一个位置为队头是，说明队列已满。 而且front指向数组的第一个元素，也就是front为0；
+  当front == rear的时候，说明队列为空。
+且rear指向最后一个元素的后一个位置。初始值也为0；
+   class CircleQueue { private int[] circleQueue; // 定义一个数组  private int maxSize; // 队列最大长度  private int front = 0; // 队头  private int rear = 0; // 队尾  public CircleQueue(int maxSize) { this.</description>
+    </item>
+    
+    <item>
+      <title>队列</title>
+      <link>https://pengkk27.github.io/post/%E9%98%9F%E5%88%97/</link>
+      <pubDate>Sun, 01 Aug 2021 11:44:17 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E9%98%9F%E5%88%97/</guid>
+      <description>在现实中，我们去银行办理业务的时候就需要排队。你来的早，排在前面，就会越早的离开。而在你排的队就是一个队列。 队列是个有序列表，它遵循先进先出的原则。
+ 根据队列的先进先出的原则，我们就可以用代码来实现一个队列。
+ 首先在一个ArrayQueue类中创建一个数组来代表一个队列  private int[] arrayQueue; // 创建一个数组  private int maxSize; // 队列的最大长度  private int front; // 队头  private int rear; // 队尾 然后我们要将这些信息进行初始化  public ArrayQueue(int max) { this.maxSize = max; // 获取队列的长度用来初始化队列  this.arrayQueue = new int[maxSize]; this.front = -1; //一开始都是没有数据，所以头和尾都为-1  this.rear = -1; } 然后是对队列的一些操作  // 判断队列是否已满  // 当队尾到达最大值时，队列已满（ 数组能储存的最大下标为 n - 1 ）  public boolean isFull() { return rear == maxSize - 1; } // 判断队列是否为空  // 当队头和队尾在同一位置时，则说明队列中间没有内容，即为空。  public boolean isEmpty() { return front == rear; } // 添加数据  // 添加数据时要先判断队列是否已满  public void addQueue(int n) { if(isFull()){ System.</description>
+    </item>
+    
+  </channel>
+</rss>

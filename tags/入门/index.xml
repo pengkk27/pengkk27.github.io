@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>入门 on pengkk27</title>
+    <link>https://pengkk27.github.io/tags/%E5%85%A5%E9%97%A8/</link>
+    <description>Recent content in 入门 on pengkk27</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 01 Aug 2021 11:51:44 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/%E5%85%A5%E9%97%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown语法</title>
+      <link>https://pengkk27.github.io/post/markdown%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Sun, 01 Aug 2021 11:51:44 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/markdown%E8%AF%AD%E6%B3%95/</guid>
+      <description>Markdown学习 标题 三级标题 ### 三级标题 四级标题 ### 三级标题 字体 Hello，World！
+**Hello，World！** Hello，World！
+*Hello，World！* Hello，World！
+***Hello，World！*** Hello，World！
+~~Hello，World！~~ 引用  This is pengkk27&amp;rsquo;s text.
+ 分割线  ---  *** 图片 ![截图](图片连接) 超链接 点击跳转百度
+[点击跳转百度](https://www.baidu.com) 列表  A B C  1. A 2. B 3. C  A B C  * A * B * C 表格    名字 性别 生日     张三 男 1999.</description>
+    </item>
+    
+    <item>
+      <title>JDK安装及配置</title>
+      <link>https://pengkk27.github.io/post/jdk%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sun, 01 Aug 2021 11:41:48 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/jdk%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;h1 id=&#34;jdk简单介绍&#34;&gt;JDK简单介绍&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;JDK Java开发工具包&lt;/li&gt;
+&lt;li&gt;JRE Java运行环境&lt;/li&gt;
+&lt;li&gt;JVM Java虚拟机&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

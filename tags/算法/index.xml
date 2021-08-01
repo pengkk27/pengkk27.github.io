@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>算法 on pengkk27</title>
+    <link>https://pengkk27.github.io/tags/%E7%AE%97%E6%B3%95/</link>
+    <description>Recent content in 算法 on pengkk27</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 01 Aug 2021 11:53:28 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>斐波那契数列</title>
+      <link>https://pengkk27.github.io/post/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</link>
+      <pubDate>Sun, 01 Aug 2021 11:53:28 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</guid>
+      <description>斐波那契数列 斐波那契数列是一个最基础的题目。
+方法一 我都遇到这个题目的第一个想法是，使用一个循环，然后让它每次去计算，直到计算到我们想要找的第几个数为止。
+也就是一边计数，一边计算数组的值。
+这个方法的时间复杂度就是O(N)；空间复杂度为O(1)。
+import java.util.*; public class Solution { public int Fibonacci(int n) { int count = 0; int first = 0; int second = 1; int res = 0; if (n &amp;lt; 2) { return n; } for (count = 2; count &amp;lt;= n; count++) { res = first + second; first = second; second = res; } return res; } } 方法二 再然后就是递归的方法，这个方法是比较经典的斐波那契数列的计算方法。它的时间复杂度为O(2^n)。
+public class Solution { public int Fibonacci(int n) { if (n == 0 || n == 1) { return n; } return Fibonacci(n - 1) + Fibonacci(n - 2); } } 其他方法 对于这道题，还可以使用动态规划。这部分我先不做解释。等到做动态规划的题目的时候再进行总结。</description>
+    </item>
+    
+    <item>
+      <title>判断素数</title>
+      <link>https://pengkk27.github.io/post/%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0/</link>
+      <pubDate>Sun, 01 Aug 2021 11:42:44 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0/</guid>
+      <description>素数的定义 素数：又称质数。是大于1自然数中的除了自身和1以外不能别其他数整除的数字。
+ 第一种方法 利用这个素数的定义，我们可以得出第一种判断素数的方法：
+int isPrime1(int n) { int i = 0; //2是素数  if(n &amp;lt;= 3) return n &amp;gt; 1; //当n不能被除了1和n自身整除的数外的数是素数  for(i = 2; i &amp;lt; n; i ++) { if(n % i == 0) return 0; } return 1; } 这个方法是最简单的判断方法，它使用一个for循环来让n一次次的除以小于n的每个数，如果除尽了的话，就不满足素数的定义。 但是这个方法也是计算量最大的。它总共会计算n-2次。
+ 第二种方法 第二种方式是：如果 n 能够被 2 ~ $\sqrt n$ 之间的数整除就不是素数（合数），反之为素数。
+所以，根据这个性质我们可以减少判断的次数来节约运算时间。
+int isPrime2(int n) { int i = 0; if(n &amp;lt;= 3) return n &amp;gt; 1; //讲判断条件改为 i &amp;lt;= sqrt(n)，即对n开平方  for(i = 2; i &amp;lt;= sqrt(n); i ++) { if(n % i == 0) return 0; } return 1; } 这个方法比上一个方法减少了很多的时间。所以使用这种方法的时候会更能提高程序的效率。</description>
+    </item>
+    
+  </channel>
+</rss>
