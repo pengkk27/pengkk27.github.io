@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pengkk27</title>
+    <link>https://pengkk27.github.io/</link>
+    <description>Recent content on pengkk27</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 01 Aug 2021 11:53:28 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>斐波那契数列</title>
+      <link>https://pengkk27.github.io/post/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</link>
+      <pubDate>Sun, 01 Aug 2021 11:53:28 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</guid>
+      <description>斐波那契数列 斐波那契数列是一个最基础的题目。
+方法一 我都遇到这个题目的第一个想法是，使用一个循环，然后让它每次去计算，直到计算到我们想要找的第几个数为止。
+也就是一边计数，一边计算数组的值。
+这个方法的时间复杂度就是O(N)；空间复杂度为O(1)。
+import java.util.*; public class Solution { public int Fibonacci(int n) { int count = 0; int first = 0; int second = 1; int res = 0; if (n &amp;lt; 2) { return n; } for (count = 2; count &amp;lt;= n; count++) { res = first + second; first = second; second = res; } return res; } } 方法二 再然后就是递归的方法，这个方法是比较经典的斐波那契数列的计算方法。它的时间复杂度为O(2^n)。
+public class Solution { public int Fibonacci(int n) { if (n == 0 || n == 1) { return n; } return Fibonacci(n - 1) + Fibonacci(n - 2); } } 其他方法 对于这道题，还可以使用动态规划。这部分我先不做解释。等到做动态规划的题目的时候再进行总结。</description>
+    </item>
+    
+    <item>
+      <title>Markdown语法</title>
+      <link>https://pengkk27.github.io/post/markdown%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Sun, 01 Aug 2021 11:51:44 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/markdown%E8%AF%AD%E6%B3%95/</guid>
+      <description>Markdown学习 标题 三级标题 ### 三级标题 四级标题 ### 三级标题 字体 Hello，World！
+**Hello，World！** Hello，World！
+*Hello，World！* Hello，World！
+***Hello，World！*** Hello，World！
+~~Hello，World！~~ 引用  This is pengkk27&amp;rsquo;s text.
+ 分割线  ---  *** 图片 ![截图](图片连接) 超链接 点击跳转百度
+[点击跳转百度](https://www.baidu.com) 列表  A B C  1. A 2. B 3. C  A B C  * A * B * C 表格    名字 性别 生日     张三 男 1999.</description>
+    </item>
+    
+    <item>
+      <title>单链表</title>
+      <link>https://pengkk27.github.io/post/%E5%8D%95%E9%93%BE%E8%A1%A8/</link>
+      <pubDate>Sun, 01 Aug 2021 11:45:34 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E5%8D%95%E9%93%BE%E8%A1%A8/</guid>
+      <description>单链表特性分析  链表是一种有序的列表。他是以节点的形式来存储。所以在他的每一个节点里面，需要有一个next域来将其他的节点进行连接。 链表的存储在内存中并不是连续的。 链表分为有头节点的链表和没有头节点的链表。（这里我们讲有头节点的链表）。  单链表的代码分析 创建节点 这里我们使用一个学生类来作为我们的节点。 class Student { private String name; // 学生的姓名  private int id; // 学生的学号  private Student next; // 节点的next域  public Student(String name, int id) { this.name = name; this.id = id; } @Override public String toString() { return &amp;#34;Student{&amp;#34; + &amp;#34;name=&amp;#39;&amp;#34; + name + &amp;#39;\&amp;#39;&amp;#39; + &amp;#34;, id=&amp;#34; + id + &amp;#39;}&amp;#39;; } } 然后我们来写一个链表类，命名为LinkedList，并且在链表类中创建一个头节点，方便我们对链表进行操作。 class LinkedList { private Student head = new Student(&amp;#34;&amp;#34;, 0); } 接着我们就要在这个链表类中添加操作链表的方法了。  因为每次操作链表的时候，头节点是不可以移动的，所以我们在方法中定义一个辅助节点来对链表更方便的操作。 其中的while循环用来遍历节点，直到找到需要操作的节点  添加节点 直接在链表结尾添加节点 // 这个插入方法不会考虑每个节点中的编号的顺序。直接将新的节点插入到最后。  public void add(Student student) { Student temp = head; while (true) { if (temp.</description>
+    </item>
+    
+    <item>
+      <title>循环队列</title>
+      <link>https://pengkk27.github.io/post/%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97/</link>
+      <pubDate>Sun, 01 Aug 2021 11:44:49 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97/</guid>
+      <description>为了防止直接使用数组来实现一个队列中的缺点：
+ 队列（数组）只能使用一次。在队列中存放数据，取出数据后的空间不能再次使用。  我们可以使用循环队列。
+ 循环队列，我们通过这个名称不觉的联想到一个圆。所以，我们不妨就把它当作一个圆形来看。 这个时候又出现了一个问题：如何用代码来实现这个圆形呢？ 接下来就要引出一个运算符：% —— 求模
+ 通过取模运算，我们将原来的判断条件进行一个修改。
+  判断队列是否已满：( rear + 1 ) % maxSize == front
+当队尾的下一个位置为队头是，说明队列已满。 而且front指向数组的第一个元素，也就是front为0；
+  当front == rear的时候，说明队列为空。
+且rear指向最后一个元素的后一个位置。初始值也为0；
+   class CircleQueue { private int[] circleQueue; // 定义一个数组  private int maxSize; // 队列最大长度  private int front = 0; // 队头  private int rear = 0; // 队尾  public CircleQueue(int maxSize) { this.</description>
+    </item>
+    
+    <item>
+      <title>队列</title>
+      <link>https://pengkk27.github.io/post/%E9%98%9F%E5%88%97/</link>
+      <pubDate>Sun, 01 Aug 2021 11:44:17 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E9%98%9F%E5%88%97/</guid>
+      <description>在现实中，我们去银行办理业务的时候就需要排队。你来的早，排在前面，就会越早的离开。而在你排的队就是一个队列。 队列是个有序列表，它遵循先进先出的原则。
+ 根据队列的先进先出的原则，我们就可以用代码来实现一个队列。
+ 首先在一个ArrayQueue类中创建一个数组来代表一个队列  private int[] arrayQueue; // 创建一个数组  private int maxSize; // 队列的最大长度  private int front; // 队头  private int rear; // 队尾 然后我们要将这些信息进行初始化  public ArrayQueue(int max) { this.maxSize = max; // 获取队列的长度用来初始化队列  this.arrayQueue = new int[maxSize]; this.front = -1; //一开始都是没有数据，所以头和尾都为-1  this.rear = -1; } 然后是对队列的一些操作  // 判断队列是否已满  // 当队尾到达最大值时，队列已满（ 数组能储存的最大下标为 n - 1 ）  public boolean isFull() { return rear == maxSize - 1; } // 判断队列是否为空  // 当队头和队尾在同一位置时，则说明队列中间没有内容，即为空。  public boolean isEmpty() { return front == rear; } // 添加数据  // 添加数据时要先判断队列是否已满  public void addQueue(int n) { if(isFull()){ System.</description>
+    </item>
+    
+    <item>
+      <title>稀疏数组</title>
+      <link>https://pengkk27.github.io/post/%E7%A8%80%E7%96%8F%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Sun, 01 Aug 2021 11:43:40 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E7%A8%80%E7%96%8F%E6%95%B0%E7%BB%84/</guid>
+      <description>有时候使用二维数组来保存数据的时候，会出现这种情况：
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7
+我们看见这种情况的数组有很多的相似的数据。在这50个数据中，除了其中的4的数据外（后面我们把这4个数字比喻做特殊数字），其他的全部都是0。 如果我们直接用二维数组来保存这些数据的话，就会花费很多的内存。所以我们需要用一种方式来将这个数组进行化简之后存储。
+ 我们先来看一下化简之后的(稀疏)数组是什么样子：
+5 10 4 1 5 1 2 0 3 3 3 2 4 9 7</description>
+    </item>
+    
+    <item>
+      <title>判断素数</title>
+      <link>https://pengkk27.github.io/post/%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0/</link>
+      <pubDate>Sun, 01 Aug 2021 11:42:44 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0/</guid>
+      <description>素数的定义 素数：又称质数。是大于1自然数中的除了自身和1以外不能别其他数整除的数字。
+ 第一种方法 利用这个素数的定义，我们可以得出第一种判断素数的方法：
+int isPrime1(int n) { int i = 0; //2是素数  if(n &amp;lt;= 3) return n &amp;gt; 1; //当n不能被除了1和n自身整除的数外的数是素数  for(i = 2; i &amp;lt; n; i ++) { if(n % i == 0) return 0; } return 1; } 这个方法是最简单的判断方法，它使用一个for循环来让n一次次的除以小于n的每个数，如果除尽了的话，就不满足素数的定义。 但是这个方法也是计算量最大的。它总共会计算n-2次。
+ 第二种方法 第二种方式是：如果 n 能够被 2 ~ $\sqrt n$ 之间的数整除就不是素数（合数），反之为素数。
+所以，根据这个性质我们可以减少判断的次数来节约运算时间。
+int isPrime2(int n) { int i = 0; if(n &amp;lt;= 3) return n &amp;gt; 1; //讲判断条件改为 i &amp;lt;= sqrt(n)，即对n开平方  for(i = 2; i &amp;lt;= sqrt(n); i ++) { if(n % i == 0) return 0; } return 1; } 这个方法比上一个方法减少了很多的时间。所以使用这种方法的时候会更能提高程序的效率。</description>
+    </item>
+    
+    <item>
+      <title>JDK安装及配置</title>
+      <link>https://pengkk27.github.io/post/jdk%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sun, 01 Aug 2021 11:41:48 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/jdk%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;h1 id=&#34;jdk简单介绍&#34;&gt;JDK简单介绍&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;JDK Java开发工具包&lt;/li&gt;
+&lt;li&gt;JRE Java运行环境&lt;/li&gt;
+&lt;li&gt;JVM Java虚拟机&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Git简单使用</title>
+      <link>https://pengkk27.github.io/post/git%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 01 Aug 2021 11:40:40 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/git%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</guid>
+      <description>&lt;p&gt;在本文中的所有命令操作都在git bash中进行&lt;/p&gt;
+&lt;h1 id=&#34;1创建克隆仓库&#34;&gt;1、创建（克隆）仓库&lt;/h1&gt;
+&lt;h2 id=&#34;11-初始化创建仓库&#34;&gt;1.1 初始化（创建）仓库：&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;git init
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;新建一个文件夹，该文件夹为你想创建的仓库。
+在该文件夹中右键，打开git bash，输入该命令。不报错，则创建成功。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java定制自己的工具类</title>
+      <link>https://pengkk27.github.io/post/java%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/</link>
+      <pubDate>Sun, 01 Aug 2021 11:39:45 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/java%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/</guid>
+      <description>很多的Java程序员都由一套自己常用的工具类。为了编写代码时的方便，可以编写自己的工具类，让自己的开发变得简洁方便。
+1、新建一个包 打开IDEA的工程后，新建一个包，然后在包下创建一个java文件。 然后在这个Java文件中写入方法。 这里使用简单的打印 hello 的方法。 为了在之后的调用方便。这里的方法设置为静态方法。 2、打包文件为jar 在设置中点击Project Structure。 然后如图按顺序进行操作。 选中你要进行包装的module。然后确定。 然后在Build中选中Build Artifacts。 选择Build或者Rebuild 3、导入 为了可以调用这个包内的方法，我们需要把包添加到Libraries中。
+选中你的这个工程文件。我这里是pengkk27。 然后确定。
+4、查看是否成功 这时候新建一个Test.java文件。静态的导入test.Hello.hello包。 然后运行查看是否成功。 </description>
+    </item>
+    
+  </channel>
+</rss>

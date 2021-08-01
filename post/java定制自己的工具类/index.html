@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <title>Java定制自己的工具类 // pengkk27</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.86.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://pengkk27.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Java定制自己的工具类"/>
+<meta name="twitter:description" content="很多的Java程序员都由一套自己常用的工具类。为了编写代码时的方便，可以编写自己的工具类，让自己的开发变得简洁方便。
+1、新建一个包 打开IDEA的工程后，新建一个包，然后在包下创建一个java文件。 然后在这个Java文件中写入方法。 这里使用简单的打印 hello 的方法。 为了在之后的调用方便。这里的方法设置为静态方法。 2、打包文件为jar 在设置中点击Project Structure。 然后如图按顺序进行操作。 选中你要进行包装的module。然后确定。 然后在Build中选中Build Artifacts。 选择Build或者Rebuild 3、导入 为了可以调用这个包内的方法，我们需要把包添加到Libraries中。
+选中你的这个工程文件。我这里是pengkk27。 然后确定。
+4、查看是否成功 这时候新建一个Test.java文件。静态的导入test.Hello.hello包。 然后运行查看是否成功。 "/>
+
+    <meta property="og:title" content="Java定制自己的工具类" />
+<meta property="og:description" content="很多的Java程序员都由一套自己常用的工具类。为了编写代码时的方便，可以编写自己的工具类，让自己的开发变得简洁方便。
+1、新建一个包 打开IDEA的工程后，新建一个包，然后在包下创建一个java文件。 然后在这个Java文件中写入方法。 这里使用简单的打印 hello 的方法。 为了在之后的调用方便。这里的方法设置为静态方法。 2、打包文件为jar 在设置中点击Project Structure。 然后如图按顺序进行操作。 选中你要进行包装的module。然后确定。 然后在Build中选中Build Artifacts。 选择Build或者Rebuild 3、导入 为了可以调用这个包内的方法，我们需要把包添加到Libraries中。
+选中你的这个工程文件。我这里是pengkk27。 然后确定。
+4、查看是否成功 这时候新建一个Test.java文件。静态的导入test.Hello.hello包。 然后运行查看是否成功。 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pengkk27.github.io/post/java%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-01T11:39:45+08:00" />
+<meta property="article:modified_time" content="2021-08-01T11:39:45+08:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://pengkk27.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>pengkk27</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Java定制自己的工具类</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Aug 1, 2021
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>很多的Java程序员都由一套自己常用的工具类。为了编写代码时的方便，可以编写自己的工具类，让自己的开发变得简洁方便。</p>
+<h1 id="1新建一个包">1、新建一个包</h1>
+<p>打开IDEA的工程后，新建一个包，然后在包下创建一个java文件。
+然后在这个Java文件中写入方法。
+这里使用简单的打印 hello 的方法。
+为了在之后的调用方便。这里的方法设置为静态方法。
+<img src="https://img-blog.csdnimg.cn/20200620113935540.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzOTY0NzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h1 id="2打包文件为jar">2、打包文件为jar</h1>
+<p>在设置中点击Project Structure。
+<img src="https://img-blog.csdnimg.cn/20200620114210915.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzOTY0NzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">
+然后如图按顺序进行操作。
+<img src="https://img-blog.csdnimg.cn/20200620114351853.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzOTY0NzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">
+<img src="https://img-blog.csdnimg.cn/2020062011444718.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzOTY0NzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">
+选中你要进行包装的module。然后确定。
+<img src="https://img-blog.csdnimg.cn/20200620114523953.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzOTY0NzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">
+然后在Build中选中Build Artifacts。
+<img src="https://img-blog.csdnimg.cn/20200620114615602.png" alt="在这里插入图片描述">
+选择Build或者Rebuild
+<img src="https://img-blog.csdnimg.cn/20200620114706376.png" alt="在这里插入图片描述"></p>
+<h1 id="3导入">3、导入</h1>
+<p>为了可以调用这个包内的方法，我们需要把包添加到Libraries中。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200620115010708.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzOTY0NzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">
+选中你的这个工程文件。我这里是pengkk27。
+<img src="https://img-blog.csdnimg.cn/20200620115232430.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzOTY0NzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">
+然后确定。</p>
+<h1 id="4查看是否成功">4、查看是否成功</h1>
+<p>这时候新建一个Test.java文件。静态的导入test.Hello.hello包。
+<img src="https://img-blog.csdnimg.cn/20200620115417652.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzOTY0NzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">
+然后运行查看是否成功。
+<img src="https://img-blog.csdnimg.cn/20200620115515327.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzOTY0NzM0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <title>单链表 // pengkk27</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.86.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://pengkk27.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="单链表"/>
+<meta name="twitter:description" content="单链表特性分析  链表是一种有序的列表。他是以节点的形式来存储。所以在他的每一个节点里面，需要有一个next域来将其他的节点进行连接。 链表的存储在内存中并不是连续的。 链表分为有头节点的链表和没有头节点的链表。（这里我们讲有头节点的链表）。  单链表的代码分析 创建节点 这里我们使用一个学生类来作为我们的节点。 class Student { private String name; // 学生的姓名  private int id; // 学生的学号  private Student next; // 节点的next域  public Student(String name, int id) { this.name = name; this.id = id; } @Override public String toString() { return &#34;Student{&#34; &#43; &#34;name=&#39;&#34; &#43; name &#43; &#39;\&#39;&#39; &#43; &#34;, id=&#34; &#43; id &#43; &#39;}&#39;; } } 然后我们来写一个链表类，命名为LinkedList，并且在链表类中创建一个头节点，方便我们对链表进行操作。 class LinkedList { private Student head = new Student(&#34;&#34;, 0); } 接着我们就要在这个链表类中添加操作链表的方法了。  因为每次操作链表的时候，头节点是不可以移动的，所以我们在方法中定义一个辅助节点来对链表更方便的操作。 其中的while循环用来遍历节点，直到找到需要操作的节点  添加节点 直接在链表结尾添加节点 // 这个插入方法不会考虑每个节点中的编号的顺序。直接将新的节点插入到最后。  public void add(Student student) { Student temp = head; while (true) { if (temp."/>
+
+    <meta property="og:title" content="单链表" />
+<meta property="og:description" content="单链表特性分析  链表是一种有序的列表。他是以节点的形式来存储。所以在他的每一个节点里面，需要有一个next域来将其他的节点进行连接。 链表的存储在内存中并不是连续的。 链表分为有头节点的链表和没有头节点的链表。（这里我们讲有头节点的链表）。  单链表的代码分析 创建节点 这里我们使用一个学生类来作为我们的节点。 class Student { private String name; // 学生的姓名  private int id; // 学生的学号  private Student next; // 节点的next域  public Student(String name, int id) { this.name = name; this.id = id; } @Override public String toString() { return &#34;Student{&#34; &#43; &#34;name=&#39;&#34; &#43; name &#43; &#39;\&#39;&#39; &#43; &#34;, id=&#34; &#43; id &#43; &#39;}&#39;; } } 然后我们来写一个链表类，命名为LinkedList，并且在链表类中创建一个头节点，方便我们对链表进行操作。 class LinkedList { private Student head = new Student(&#34;&#34;, 0); } 接着我们就要在这个链表类中添加操作链表的方法了。  因为每次操作链表的时候，头节点是不可以移动的，所以我们在方法中定义一个辅助节点来对链表更方便的操作。 其中的while循环用来遍历节点，直到找到需要操作的节点  添加节点 直接在链表结尾添加节点 // 这个插入方法不会考虑每个节点中的编号的顺序。直接将新的节点插入到最后。  public void add(Student student) { Student temp = head; while (true) { if (temp." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pengkk27.github.io/post/%E5%8D%95%E9%93%BE%E8%A1%A8/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-01T11:45:34+08:00" />
+<meta property="article:modified_time" content="2021-08-01T11:45:34+08:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://pengkk27.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>pengkk27</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">单链表</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Aug 1, 2021
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="单链表特性分析">单链表特性分析</h1>
+<ul>
+<li>链表是一种有序的列表。他是以节点的形式来存储。所以在他的每一个节点里面，需要有一个next域来将其他的节点进行连接。</li>
+<li>链表的存储在内存中并不是连续的。</li>
+<li>链表分为有头节点的链表和没有头节点的链表。（这里我们讲有头节点的链表）。</li>
+</ul>
+<h1 id="单链表的代码分析">单链表的代码分析</h1>
+<h2 id="创建节点">创建节点</h2>
+<h3 id="这里我们使用一个学生类来作为我们的节点">这里我们使用一个学生类来作为我们的节点。</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Student</span> <span style="color:#f92672">{</span>
+
+      <span style="color:#66d9ef">private</span> String name<span style="color:#f92672">;</span> <span style="color:#75715e">// 学生的姓名
+</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> id<span style="color:#f92672">;</span> <span style="color:#75715e">// 学生的学号
+</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">private</span> Student next<span style="color:#f92672">;</span> <span style="color:#75715e">// 节点的next域
+</span><span style="color:#75715e"></span>
+      <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Student</span><span style="color:#f92672">(</span>String name<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> id<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+          <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> name<span style="color:#f92672">;</span>
+          <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> id<span style="color:#f92672">;</span>
+      <span style="color:#f92672">}</span>
+
+      <span style="color:#a6e22e">@Override</span>
+      <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">toString</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+          <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Student{&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;name=&#39;&#34;</span> <span style="color:#f92672">+</span> name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;\&#39;&#39;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;, id=&#34;</span> <span style="color:#f92672">+</span> id <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;}&#39;</span><span style="color:#f92672">;</span>
+      <span style="color:#f92672">}</span>
+  <span style="color:#f92672">}</span>
+</code></pre></div><h3 id="然后我们来写一个链表类命名为linkedlist并且在链表类中创建一个头节点方便我们对链表进行操作">然后我们来写一个链表类，命名为LinkedList，并且在链表类中创建一个头节点，方便我们对链表进行操作。</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">  <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LinkedList</span> <span style="color:#f92672">{</span>
+
+      <span style="color:#66d9ef">private</span> Student head <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Student<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">,</span> 0<span style="color:#f92672">);</span>
+
+  <span style="color:#f92672">}</span>
+</code></pre></div><h3 id="接着我们就要在这个链表类中添加操作链表的方法了">接着我们就要在这个链表类中添加操作链表的方法了。</h3>
+<ul>
+<li><strong>因为每次操作链表的时候，头节点是不可以移动的，所以我们在方法中定义一个辅助节点来对链表更方便的操作。</strong></li>
+<li><strong>其中的while循环用来遍历节点，直到找到需要操作的节点</strong></li>
+</ul>
+<h4 id="添加节点">添加节点</h4>
+<h5 id="直接在链表结尾添加节点">直接在链表结尾添加节点</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#75715e">// 这个插入方法不会考虑每个节点中的编号的顺序。直接将新的节点插入到最后。
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>Student student<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Student temp <span style="color:#f92672">=</span> head<span style="color:#f92672">;</span> 
+
+        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span> 
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+            temp <span style="color:#f92672">=</span> temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+
+        temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> student<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><h5 id="根据学生的序号进行添加">根据学生的序号进行添加</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#75715e">// 这个方法中会考虑到插入节点中的序号，根据序号的顺序来进行插入。
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">addByOrder</span><span style="color:#f92672">(</span>Student student<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Student temp <span style="color:#f92672">=</span> head<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">boolean</span> flag <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+
+        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">&gt;</span> student<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> student<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                flag <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+
+            temp <span style="color:#f92672">=</span> temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>flag<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;该学生信息已经录入！&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+            student<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
+            temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> student<span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><h5 id="修改节点信息">修改节点信息</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">change</span><span style="color:#f92672">(</span>Student student<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>head<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;该链表为空！&#34;</span><span style="color:#f92672">);</span>
+            <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+
+        Student temp <span style="color:#f92672">=</span> head<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">boolean</span> flag <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+
+        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>temp <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>temp<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> student<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                flag <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+            temp <span style="color:#f92672">=</span> temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>flag<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            temp<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> student<span style="color:#f92672">.</span><span style="color:#a6e22e">name</span><span style="color:#f92672">;</span>
+            temp<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> student<span style="color:#f92672">.</span><span style="color:#a6e22e">id</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;没有找到该节点！&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><h5 id="删除节点">删除节点</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">del</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> number<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+
+        Student temp <span style="color:#f92672">=</span> head<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">boolean</span> flag <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">;</span>
+
+        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">.</span><span style="color:#a6e22e">id</span> <span style="color:#f92672">==</span> number<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                flag <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">;</span>
+                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+            temp <span style="color:#f92672">=</span> temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>flag<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;没有该节点&#34;</span><span style="color:#f92672">);</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><h5 id="遍历节点">遍历节点</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">show</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>head<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;该链表为空！&#34;</span><span style="color:#f92672">);</span>
+            <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+
+        Student temp <span style="color:#f92672">=</span> head<span style="color:#f92672">;</span>
+
+        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">break</span><span style="color:#f92672">;</span>
+            <span style="color:#f92672">}</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>temp<span style="color:#f92672">);</span>
+            temp <span style="color:#f92672">=</span> temp<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><h3 id="最后再来写一个主类来测试一下">最后再来写一个主类来测试一下</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LinkedListTest</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        LinkedList linkedList <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedList<span style="color:#f92672">();</span>
+        Student student1 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Student<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;张三&#34;</span><span style="color:#f92672">,</span> 1<span style="color:#f92672">);</span>
+        Student student2 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Student<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;李四&#34;</span><span style="color:#f92672">,</span> 2<span style="color:#f92672">);</span>
+        Student student3 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Student<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;王五&#34;</span><span style="color:#f92672">,</span> 3<span style="color:#f92672">);</span>
+        Student student4 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Student<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;赵六&#34;</span><span style="color:#f92672">,</span> 4<span style="color:#f92672">);</span>
+        Student student5 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Student<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;孙七&#34;</span><span style="color:#f92672">,</span> 5<span style="color:#f92672">);</span>
+        Student student6 <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Student<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;周八&#34;</span><span style="color:#f92672">,</span> 6<span style="color:#f92672">);</span>
+
+        linkedList<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>student1<span style="color:#f92672">);</span>
+        linkedList<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>student2<span style="color:#f92672">);</span>
+        linkedList<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>student3<span style="color:#f92672">);</span>
+
+        linkedList<span style="color:#f92672">.</span><span style="color:#a6e22e">show</span><span style="color:#f92672">();</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;----------------------&#34;</span><span style="color:#f92672">);</span>
+
+        linkedList<span style="color:#f92672">.</span><span style="color:#a6e22e">del</span><span style="color:#f92672">(</span>0002<span style="color:#f92672">);</span>
+
+        linkedList<span style="color:#f92672">.</span><span style="color:#a6e22e">show</span><span style="color:#f92672">();</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;----------------------&#34;</span><span style="color:#f92672">);</span>
+
+        linkedList<span style="color:#f92672">.</span><span style="color:#a6e22e">addByOrder</span><span style="color:#f92672">(</span>student6<span style="color:#f92672">);</span>
+        linkedList<span style="color:#f92672">.</span><span style="color:#a6e22e">addByOrder</span><span style="color:#f92672">(</span>student4<span style="color:#f92672">);</span>
+        linkedList<span style="color:#f92672">.</span><span style="color:#a6e22e">addByOrder</span><span style="color:#f92672">(</span>student5<span style="color:#f92672">);</span>
+
+        linkedList<span style="color:#f92672">.</span><span style="color:#a6e22e">show</span><span style="color:#f92672">();</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;----------------------&#34;</span><span style="color:#f92672">);</span>
+
+        Student student <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Student<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;郑十&#34;</span><span style="color:#f92672">,</span>1<span style="color:#f92672">);</span>
+
+        linkedList<span style="color:#f92672">.</span><span style="color:#a6e22e">change</span><span style="color:#f92672">(</span>student<span style="color:#f92672">);</span>
+
+        linkedList<span style="color:#f92672">.</span><span style="color:#a6e22e">show</span><span style="color:#f92672">();</span>
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;----------------------&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

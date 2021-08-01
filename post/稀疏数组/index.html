@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <title>稀疏数组 // pengkk27</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.86.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://pengkk27.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="稀疏数组"/>
+<meta name="twitter:description" content="有时候使用二维数组来保存数据的时候，会出现这种情况：
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7
+我们看见这种情况的数组有很多的相似的数据。在这50个数据中，除了其中的4的数据外（后面我们把这4个数字比喻做特殊数字），其他的全部都是0。 如果我们直接用二维数组来保存这些数据的话，就会花费很多的内存。所以我们需要用一种方式来将这个数组进行化简之后存储。
+ 我们先来看一下化简之后的(稀疏)数组是什么样子：
+5 10 4 1 5 1 2 0 3 3 3 2 4 9 7"/>
+
+    <meta property="og:title" content="稀疏数组" />
+<meta property="og:description" content="有时候使用二维数组来保存数据的时候，会出现这种情况：
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7
+我们看见这种情况的数组有很多的相似的数据。在这50个数据中，除了其中的4的数据外（后面我们把这4个数字比喻做特殊数字），其他的全部都是0。 如果我们直接用二维数组来保存这些数据的话，就会花费很多的内存。所以我们需要用一种方式来将这个数组进行化简之后存储。
+ 我们先来看一下化简之后的(稀疏)数组是什么样子：
+5 10 4 1 5 1 2 0 3 3 3 2 4 9 7" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pengkk27.github.io/post/%E7%A8%80%E7%96%8F%E6%95%B0%E7%BB%84/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-01T11:43:40+08:00" />
+<meta property="article:modified_time" content="2021-08-01T11:43:40+08:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://pengkk27.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>pengkk27</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">稀疏数组</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Aug 1, 2021
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>有时候使用二维数组来保存数据的时候，会出现这种情况：</p>
+<p>0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 1 0 0 0 0
+3 0 0 0 0 0 0 0 0 0
+0 0 0 2 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 7</p>
+<p>我们看见这种情况的数组有很多的相似的数据。在这50个数据中，除了其中的4的数据外（后面我们把这4个数字比喻做特殊数字），其他的全部都是0。
+如果我们直接用二维数组来保存这些数据的话，就会花费很多的内存。所以我们需要用一种方式来将这个数组进行化简之后存储。</p>
+<hr>
+<p>我们先来看一下化简之后的(稀疏)数组是什么样子：</p>
+<p>5        10        4
+1          5         1
+2         0         3
+3         3         2
+4         9         7</p>
+<p>经过化简之后，就从5 × 10 的数组变成了5 × 3的数组。要存储的数据也变成了15个。这大大减少了存放数据所占用的空间。</p>
+<hr>
+<p>现在我们来解释一下转换后的数组每行每列的意义：</p>
+<ol>
+<li>
+<p>在转换后的第一行中，
+<strong>5        10        4</strong>
+这三个数，5代表原数组有5行，10代表原数组有10列，4则代表有4个数（因为其他的数字都是0，而这4个数都是不同与0的需要存储的数字）。这个4也同时定义了稀疏数组的大小。
+稀疏数组的列是固定的，即col = 3，而行则是需要存放数字个数加一（算上存放原数组的信息）。拿这个例子来说，稀疏数组的大小应该是 sparseArray[5][3]</p>
+</li>
+<li>
+<p>而在接下来的4行内容的性质都是一样的：需要存储的原数组中特殊信息。
+例如这个第二行
+<strong>1          5         1</strong>
+1代表是这个特殊数字在整个数组的第1行，5代表是在第5列，1就是这个位置存放的那个数字。
+类似这样以此往后。</p>
+</li>
+</ol>
+<hr>
+<p>接下来用代码来进行实现这个稀疏数组：</p>
+<ol>
+<li>首先我们创建一个二维数组</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">	<span style="color:#66d9ef">int</span><span style="color:#f92672">[][]</span> Array <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span>5<span style="color:#f92672">][</span>10<span style="color:#f92672">];</span>
+	Array<span style="color:#f92672">[</span>1<span style="color:#f92672">][</span>5<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
+	Array<span style="color:#f92672">[</span>2<span style="color:#f92672">][</span>0<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 3<span style="color:#f92672">;</span>
+	Array<span style="color:#f92672">[</span>3<span style="color:#f92672">][</span>3<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 2<span style="color:#f92672">;</span>
+	Array<span style="color:#f92672">[</span>4<span style="color:#f92672">][</span>9<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 7<span style="color:#f92672">;</span>
+</code></pre></div><ol start="2">
+<li>然后需要对这个数组进行遍历，数出有多少个特殊数字</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">		<span style="color:#66d9ef">int</span> sum <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> Array<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> j <span style="color:#f92672">&lt;</span> Array<span style="color:#f92672">[</span>0<span style="color:#f92672">].</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span> j<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>Array<span style="color:#f92672">[</span>i<span style="color:#f92672">][</span>j<span style="color:#f92672">]</span> <span style="color:#f92672">!=</span> 0<span style="color:#f92672">)</span>
+                    sum <span style="color:#f92672">++;</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span>
+</code></pre></div><ol start="3">
+<li>当我们知道了有多少个特殊数字之后，就可以创建稀疏数组了</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">		<span style="color:#66d9ef">int</span><span style="color:#f92672">[][]</span> sparseArray <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span>sum <span style="color:#f92672">+</span> 1<span style="color:#f92672">][</span>3<span style="color:#f92672">];</span>
+
+        sparseArray<span style="color:#f92672">[</span>0<span style="color:#f92672">][</span>0<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> Array<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span>
+        sparseArray<span style="color:#f92672">[</span>0<span style="color:#f92672">][</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> Array<span style="color:#f92672">[</span>0<span style="color:#f92672">].</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span>
+        sparseArray<span style="color:#f92672">[</span>0<span style="color:#f92672">][</span>2<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> sum<span style="color:#f92672">;</span>
+
+        <span style="color:#66d9ef">int</span> count <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> Array<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> j <span style="color:#f92672">&lt;</span> Array<span style="color:#f92672">[</span>0<span style="color:#f92672">].</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span> j<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>Array<span style="color:#f92672">[</span>i<span style="color:#f92672">][</span>j<span style="color:#f92672">]</span> <span style="color:#f92672">!=</span> 0<span style="color:#f92672">){</span>
+                    count <span style="color:#f92672">++;</span>
+                    sparseArray<span style="color:#f92672">[</span>count<span style="color:#f92672">][</span>0<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> i<span style="color:#f92672">;</span>
+                    sparseArray<span style="color:#f92672">[</span>count<span style="color:#f92672">][</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> j<span style="color:#f92672">;</span>
+                    sparseArray<span style="color:#f92672">[</span>count<span style="color:#f92672">][</span>2<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> Array<span style="color:#f92672">[</span>i<span style="color:#f92672">][</span>j<span style="color:#f92672">];</span>
+                <span style="color:#f92672">}</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span>
+</code></pre></div><ol start="4">
+<li>然后我们可以将该数组输出看看结果如何</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">		<span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> sparseArray<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> j <span style="color:#f92672">&lt;</span> sparseArray<span style="color:#f92672">[</span>i<span style="color:#f92672">].</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span> j<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+                System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">printf</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%d\t&#34;</span><span style="color:#f92672">,</span> sparseArray<span style="color:#f92672">[</span>i<span style="color:#f92672">][</span>j<span style="color:#f92672">]);</span>
+            <span style="color:#f92672">}</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">();</span>
+        <span style="color:#f92672">}</span>
+</code></pre></div><hr>
+<p>除了将二维数组转化为稀疏数组之外，我们也需要在使用数组时把稀疏数组转化为二维数组：</p>
+<ol>
+<li>首先获取稀疏数组第一行的信息来创建二维数组：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">		<span style="color:#66d9ef">int</span><span style="color:#f92672">[][]</span> sourceArray <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span>sparseArray<span style="color:#f92672">[</span>0<span style="color:#f92672">][</span>0<span style="color:#f92672">]][</span>sparseArray<span style="color:#f92672">[</span>0<span style="color:#f92672">][</span>1<span style="color:#f92672">]];</span>    
+</code></pre></div><ol start="2">
+<li>然后将稀疏数组中的数据存放到创建的这个原数组中：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">		<span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> sparseArray<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+    		sourceArray<span style="color:#f92672">[</span>sparseArray<span style="color:#f92672">[</span>i<span style="color:#f92672">][</span>0<span style="color:#f92672">]][</span>sparseArray<span style="color:#f92672">[</span>i<span style="color:#f92672">][</span>1<span style="color:#f92672">]]</span> <span style="color:#f92672">=</span> sparseArray<span style="color:#f92672">[</span>i<span style="color:#f92672">][</span>2<span style="color:#f92672">];</span>
+   		<span style="color:#f92672">}</span>
+</code></pre></div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
