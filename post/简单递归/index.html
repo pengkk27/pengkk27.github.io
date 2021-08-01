@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <title>简单递归 // pengkk27</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.86.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="pengkk27" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://pengkk27.github.io/css/main.min.88e7083eff65effb7485b6e6f38d10afbec25093a6fac42d734ce9024d3defbd.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="简单递归"/>
+<meta name="twitter:description" content="直接或间接的调用自身，这就是递归。"/>
+
+    <meta property="og:title" content="简单递归" />
+<meta property="og:description" content="直接或间接的调用自身，这就是递归。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pengkk27.github.io/post/%E7%AE%80%E5%8D%95%E9%80%92%E5%BD%92/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-01T19:44:54+08:00" />
+<meta property="article:modified_time" content="2021-08-01T19:44:54+08:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://pengkk27.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="pengkk27" /></a>
+      <h1>pengkk27</h1>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/categories/">Categories</a>
+      </nav>
+      <p>一个什么都不会的小菜鸟</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/pengkk27" target="_blank" rel="noreferrer noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>My Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">简单递归</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Aug 1, 2021
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://pengkk27.github.io/tags/%E9%80%92%E5%BD%92/">递归</a>
+              <a class="tag" href="https://pengkk27.github.io/tags/%E7%AE%97%E6%B3%95/">算法</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>直接或间接的调用自身，这就是递归。</p>
+<p>递归方法必须要有一个终止条件，否则会一直调用下去。而且每个递归开始都要有一个非递归定义的初始值来进行计算。</p>
+<p><em><strong>1. 例子1：</strong></em></p>
+<p>我们将常见的累加运算，我们可以使用for循环来实现，从1加到n.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> n<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">int</span> sum <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;=</span> n<span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+        sum <span style="color:#f92672">+=</span> i<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">return</span> sum<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>使用递归则代码变为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> n<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n <span style="color:#f92672">&lt;</span> 1<span style="color:#f92672">)</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span>1<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span>
+        <span style="color:#66d9ef">return</span> 1<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">return</span> n <span style="color:#f92672">+</span> add<span style="color:#f92672">(</span>n <span style="color:#f92672">-</span> 1<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li>假如我们要计算5的累加，则将5传入进去。if判断都不成立，就执行最后的return语句，为5 + add(4)</li>
+<li>然后参数为4，执行该方法，还是一样不满足判断，直接return 4 + add(3)</li>
+<li>然后都是一样，3 + add(2) 、 2 + add(1)</li>
+<li>到参数为1的时候，返回为1，这时候就开始往上加，通过这样来实现累加</li>
+<li>得出最后结果为15</li>
+</ul>
+<hr>
+<p><em><strong>2. 例子2：</strong></em></p>
+<p>n =</p>
+<ul>
+<li>如果n为0，则结果为1</li>
+<li>如果n大于0，则结果为 n * (n - 1)</li>
+</ul>
+<p>阶乘函数是一个数学的递归公式，根据这个公式的判断条件来看。
+当n为0时，给出了递归的初始值。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">factorial</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> n<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>n <span style="color:#f92672">==</span> 0<span style="color:#f92672">)</span>
+        <span style="color:#66d9ef">return</span> 1<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">return</span> n <span style="color:#f92672">*</span> factorial<span style="color:#f92672">(</span>n <span style="color:#f92672">-</span> 1<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+</code></pre></div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

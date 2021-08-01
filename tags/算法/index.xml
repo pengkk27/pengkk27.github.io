@@ -6,7 +6,45 @@
     <description>Recent content in 算法 on pengkk27</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Aug 2021 11:53:28 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 19:45:14 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>排序对数期</title>
+      <link>https://pengkk27.github.io/post/%E6%8E%92%E5%BA%8F%E5%AF%B9%E6%95%B0%E6%9C%9F/</link>
+      <pubDate>Sun, 01 Aug 2021 19:45:14 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E6%8E%92%E5%BA%8F%E5%AF%B9%E6%95%B0%E6%9C%9F/</guid>
+      <description>&lt;p&gt;在学习排序算法的时候，通常需要进行预先设置一个数列，来对其进行排序。但是这个人为设置的数组比较小，对整个排序算法的测试并不是很全面。所以可以编写一个对数器，来对排序算法进行验证。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>排序算法笔记</title>
+      <link>https://pengkk27.github.io/post/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 01 Aug 2021 19:45:04 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;h1 id=&#34;排序算法种类&#34;&gt;排序算法种类&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;选择排序&lt;/li&gt;
+&lt;li&gt;冒泡排序&lt;/li&gt;
+&lt;li&gt;插入排序&lt;/li&gt;
+&lt;li&gt;希尔排序&lt;/li&gt;
+&lt;li&gt;归并排序&lt;/li&gt;
+&lt;li&gt;快速排序&lt;/li&gt;
+&lt;li&gt;计数排序&lt;/li&gt;
+&lt;li&gt;基数排序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;ldquo;持续更新&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>简单递归</title>
+      <link>https://pengkk27.github.io/post/%E7%AE%80%E5%8D%95%E9%80%92%E5%BD%92/</link>
+      <pubDate>Sun, 01 Aug 2021 19:44:54 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E7%AE%80%E5%8D%95%E9%80%92%E5%BD%92/</guid>
+      <description>&lt;p&gt;直接或间接的调用自身，这就是递归。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>斐波那契数列</title>
       <link>https://pengkk27.github.io/post/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</link>

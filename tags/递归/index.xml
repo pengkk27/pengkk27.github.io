@@ -6,7 +6,16 @@
     <description>Recent content in 递归 on pengkk27</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Aug 2021 11:53:28 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/%E9%80%92%E5%BD%92/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 19:44:54 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/%E9%80%92%E5%BD%92/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>简单递归</title>
+      <link>https://pengkk27.github.io/post/%E7%AE%80%E5%8D%95%E9%80%92%E5%BD%92/</link>
+      <pubDate>Sun, 01 Aug 2021 19:44:54 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E7%AE%80%E5%8D%95%E9%80%92%E5%BD%92/</guid>
+      <description>&lt;p&gt;直接或间接的调用自身，这就是递归。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>斐波那契数列</title>
       <link>https://pengkk27.github.io/post/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</link>

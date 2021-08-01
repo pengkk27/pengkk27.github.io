@@ -6,7 +6,16 @@
     <description>Recent content in 技巧 on pengkk27</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Aug 2021 11:51:44 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 19:44:40 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Terminal</title>
+      <link>https://pengkk27.github.io/post/windows-terminal/</link>
+      <pubDate>Sun, 01 Aug 2021 19:44:40 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/windows-terminal/</guid>
+      <description>&lt;p&gt;之前在Linux的课程上，对命令终端有了一定的了解。而且Linux终端可以通过oh-my-zsh来进行美化。但我那个时候使用的是fish，oh-my-fish来对终端进行美化。而且还有命令提示的功能。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Markdown语法</title>
       <link>https://pengkk27.github.io/post/markdown%E8%AF%AD%E6%B3%95/</link>

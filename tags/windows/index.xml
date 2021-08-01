@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on pengkk27</title>
+    <link>https://pengkk27.github.io/tags/windows/</link>
+    <description>Recent content in Windows on pengkk27</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 01 Aug 2021 19:44:40 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows Terminal</title>
+      <link>https://pengkk27.github.io/post/windows-terminal/</link>
+      <pubDate>Sun, 01 Aug 2021 19:44:40 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/windows-terminal/</guid>
+      <description>&lt;p&gt;之前在Linux的课程上，对命令终端有了一定的了解。而且Linux终端可以通过oh-my-zsh来进行美化。但我那个时候使用的是fish，oh-my-fish来对终端进行美化。而且还有命令提示的功能。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

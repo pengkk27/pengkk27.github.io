@@ -6,7 +6,20 @@
     <description>Recent content in Java on pengkk27</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Aug 2021 11:41:48 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 19:44:05 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java哈希表</title>
+      <link>https://pengkk27.github.io/post/java%E5%93%88%E5%B8%8C%E8%A1%A8/</link>
+      <pubDate>Sun, 01 Aug 2021 19:44:05 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/java%E5%93%88%E5%B8%8C%E8%A1%A8/</guid>
+      <description>&lt;p&gt;Java中，哈希表有两种：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;只存放值，没有伴随的数据&lt;/li&gt;
+&lt;li&gt;需要存放值和伴随的数据&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
     <item>
       <title>JDK安装及配置</title>
       <link>https://pengkk27.github.io/post/jdk%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</link>
