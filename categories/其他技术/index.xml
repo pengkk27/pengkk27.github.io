@@ -6,7 +6,33 @@
     <description>Recent content in 其他技术 on pengkk27</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Aug 2021 19:44:40 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/categories/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Sep 2021 17:40:00 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/categories/%E5%85%B6%E4%BB%96%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用hugo搭建个人博客</title>
+      <link>https://pengkk27.github.io/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Fri, 03 Sep 2021 17:40:00 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>安装 HUGO hugo的安装可以在GitHub上找到对应的版本进行下载。
+HUGO的GitHub releases地址
+下载下来之后是个压缩包，解压之后就相当与安装完成了。并且可以使用
+hugo version 这个命令查看是否安装完成。
+如果正确的安装上的话，就可以看到关于hugo的一些信息。
+创建站点 安装完之后就需要创建一个站点。这个时候使用命令：
+hugo new site &amp;lt;这里是你要创建站点的名称&amp;gt; 这条命令运行完之后会生成一个以站点名称为名的文件夹。这个文件夹里面就是hugo创建的站点包含的所有文件。
+接着进入这个文件夹。
+主题配置 创建完站点后可以去hugo的官网上下载一个自己喜欢的主题。然后下载下来，并安装这个主题。
+一般情况下在主题的介绍里都会有主题的安装文档。可以根据这个文档步骤来进行主题安装。
+写博客启动博客 当主题安装完之后可以先启动一下这个主题的博客
+hugo server -t &amp;lt;主题名称&amp;gt; --buildDrafts 这个时候会在本地启动个人的博客。
+创建文章的话需要使用
+hugo new post/&amp;lt;你要创建的博客的名称&amp;gt; 这里通常是使用markdown文件来编写博客。
+写完博客之后，继续使用刚才的命令来在本地启动博客来预览自己写的新博客内容。
+部署GitHub 首先需要在GitHub上创建要给和自己用户名同名的仓库。 使用命令
+hugo --theme=&amp;lt;主题名&amp;gt; --baseUrl=&amp;#34;&amp;lt;你的用户名&amp;gt;.github.io/&amp;#34; --buildDrafts 这条命令执行完成后，会生成一个pulic文件夹，这个文件夹中就是我们要放到GitHub上的内容，也是我们写完的博客内容。
+之后进入到public文件夹中，将public文件夹创建为一个git仓库，然后上传到GitHub上。</description>
+    </item>
+    
     <item>
       <title>Windows Terminal</title>
       <link>https://pengkk27.github.io/post/windows-terminal/</link>
