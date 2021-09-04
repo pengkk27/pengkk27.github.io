@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>前端 on pengkk27</title>
+    <link>https://pengkk27.github.io/categories/%E5%89%8D%E7%AB%AF/</link>
+    <description>Recent content in 前端 on pengkk27</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 03 Sep 2021 21:06:35 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>微信小程序使用讯飞接口语音识别</title>
+      <link>https://pengkk27.github.io/post/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E8%AE%AF%E9%A3%9E%E6%8E%A5%E5%8F%A3%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/</link>
+      <pubDate>Fri, 03 Sep 2021 21:06:35 +0800</pubDate>
+      
+      <guid>https://pengkk27.github.io/post/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E8%AE%AF%E9%A3%9E%E6%8E%A5%E5%8F%A3%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/</guid>
+      <description>之前看过网上其他几位使用讯飞的接口来做微信小程序的。在自己实际跟着别人的博客做的时候，却又会遇到一些问题。所以在此对使用讯飞接口做一个总结。这里我是用WebAPI来做。  1. 申请科大讯飞的接口 科大讯飞的官方网站
+进入官网之后，登陆账号（如果没有，可以注册使用）。
+登陆之后，点击右上角的控制台。进入控制中心，创建新应用 填写好信息之后便可创建一个新的应用。之后进入这个应用，并且会在左上角看到三个信息：
+ APPID APISecret APIKey  这三个信息是我们的程序调用讯飞的接口时用来验证身份的。这点通过它们的名称就可以猜出来。
+2. 创建微信小程序 微信小程序的开发工具的安装和开发账号的申请我就不用多说了；对于微信小程序的一些文件的解释在官方文档中也有讲解。这里对于微信小程序开发的一些基础的内容不在多说。
+（1）展示页面 新创建一个微信小程序后，先来写前端展示的页面：
+app.wxss文件
+page { height: 100%; background-color: #ffffff; } .container { height: 100%; display: flex; flex-direction: column; } index.wxml文件
+&amp;lt;view class=&amp;#34;container&amp;#34;&amp;gt; &amp;lt;view class=&amp;#34;showContent&amp;#34;&amp;gt; &amp;lt;view&amp;gt;{{searchKey}}&amp;lt;/view&amp;gt; &amp;lt;/view&amp;gt; &amp;lt;view class=&amp;#34;content&amp;#34;&amp;gt; &amp;lt;button class=&amp;#34;btn&amp;#34; bindtouchstart=&amp;#39;start&amp;#39; bindtouchend=&amp;#34;stop&amp;#34;&amp;gt;点击按钮说话&amp;lt;/button&amp;gt; &amp;lt;/view&amp;gt; &amp;lt;/view&amp;gt; 在这里的 bindtouchstart 是当按下这个按钮不松开会执行指定的方法，相同 bindtouchend 则是松开后执行指定的方法。
+index.wxss文件
+.showContent { flex: 3 0 auto; text-align: center; padding: 100rpx; font-size: 40rpx; color: black; } .</description>
+    </item>
+    
+  </channel>
+</rss>
