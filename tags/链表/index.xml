@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>链表 on pengkk27</title>
-    <link>http://pengkk27.github.io/tags/%E9%93%BE%E8%A1%A8/</link>
+    <link>https://pengkk27.github.io/tags/%E9%93%BE%E8%A1%A8/</link>
     <description>Recent content in 链表 on pengkk27</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Aug 2021 11:45:34 +0800</lastBuildDate><atom:link href="http://pengkk27.github.io/tags/%E9%93%BE%E8%A1%A8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 11:45:34 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/%E9%93%BE%E8%A1%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>单链表</title>
-      <link>http://pengkk27.github.io/post/%E5%8D%95%E9%93%BE%E8%A1%A8/</link>
+      <link>https://pengkk27.github.io/post/%E5%8D%95%E9%93%BE%E8%A1%A8/</link>
       <pubDate>Sun, 01 Aug 2021 11:45:34 +0800</pubDate>
       
-      <guid>http://pengkk27.github.io/post/%E5%8D%95%E9%93%BE%E8%A1%A8/</guid>
+      <guid>https://pengkk27.github.io/post/%E5%8D%95%E9%93%BE%E8%A1%A8/</guid>
       <description>单链表特性分析  链表是一种有序的列表。他是以节点的形式来存储。所以在他的每一个节点里面，需要有一个next域来将其他的节点进行连接。 链表的存储在内存中并不是连续的。 链表分为有头节点的链表和没有头节点的链表。（这里我们讲有头节点的链表）。  单链表的代码分析 创建节点 这里我们使用一个学生类来作为我们的节点。 class Student { private String name; // 学生的姓名  private int id; // 学生的学号  private Student next; // 节点的next域  public Student(String name, int id) { this.name = name; this.id = id; } @Override public String toString() { return &amp;#34;Student{&amp;#34; + &amp;#34;name=&amp;#39;&amp;#34; + name + &amp;#39;\&amp;#39;&amp;#39; + &amp;#34;, id=&amp;#34; + id + &amp;#39;}&amp;#39;; } } 然后我们来写一个链表类，命名为LinkedList，并且在链表类中创建一个头节点，方便我们对链表进行操作。 class LinkedList { private Student head = new Student(&amp;#34;&amp;#34;, 0); } 接着我们就要在这个链表类中添加操作链表的方法了。  因为每次操作链表的时候，头节点是不可以移动的，所以我们在方法中定义一个辅助节点来对链表更方便的操作。 其中的while循环用来遍历节点，直到找到需要操作的节点  添加节点 直接在链表结尾添加节点 // 这个插入方法不会考虑每个节点中的编号的顺序。直接将新的节点插入到最后。  public void add(Student student) { Student temp = head; while (true) { if (temp.</description>
     </item>
     
