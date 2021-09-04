@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on pengkk27</title>
-    <link>https://pengkk27.github.io/categories/java/</link>
+    <link>http://pengkk27.github.io/categories/java/</link>
     <description>Recent content in Java on pengkk27</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Aug 2021 11:41:48 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 11:41:48 +0800</lastBuildDate><atom:link href="http://pengkk27.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JDK安装及配置</title>
-      <link>https://pengkk27.github.io/post/jdk%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</link>
+      <link>http://pengkk27.github.io/post/jdk%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sun, 01 Aug 2021 11:41:48 +0800</pubDate>
       
-      <guid>https://pengkk27.github.io/post/jdk%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</guid>
+      <guid>http://pengkk27.github.io/post/jdk%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE/</guid>
       <description>&lt;h1 id=&#34;jdk简单介绍&#34;&gt;JDK简单介绍&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;JDK Java开发工具包&lt;/li&gt;
@@ -23,10 +23,10 @@
     
     <item>
       <title>Java定制自己的工具类</title>
-      <link>https://pengkk27.github.io/post/java%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/</link>
+      <link>http://pengkk27.github.io/post/java%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/</link>
       <pubDate>Sun, 01 Aug 2021 11:39:45 +0800</pubDate>
       
-      <guid>https://pengkk27.github.io/post/java%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/</guid>
+      <guid>http://pengkk27.github.io/post/java%E5%AE%9A%E5%88%B6%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/</guid>
       <description>很多的Java程序员都由一套自己常用的工具类。为了编写代码时的方便，可以编写自己的工具类，让自己的开发变得简洁方便。
 1、新建一个包 打开IDEA的工程后，新建一个包，然后在包下创建一个java文件。 然后在这个Java文件中写入方法。 这里使用简单的打印 hello 的方法。 为了在之后的调用方便。这里的方法设置为静态方法。 2、打包文件为jar 在设置中点击Project Structure。 然后如图按顺序进行操作。 选中你要进行包装的module。然后确定。 然后在Build中选中Build Artifacts。 选择Build或者Rebuild 3、导入 为了可以调用这个包内的方法，我们需要把包添加到Libraries中。
 选中你的这个工程文件。我这里是pengkk27。 然后确定。

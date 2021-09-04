@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JavaScript on pengkk27</title>
-    <link>https://pengkk27.github.io/tags/javascript/</link>
+    <link>http://pengkk27.github.io/tags/javascript/</link>
     <description>Recent content in JavaScript on pengkk27</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 03 Sep 2021 21:06:35 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Sep 2021 21:06:35 +0800</lastBuildDate><atom:link href="http://pengkk27.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>微信小程序使用讯飞接口语音识别</title>
-      <link>https://pengkk27.github.io/post/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E8%AE%AF%E9%A3%9E%E6%8E%A5%E5%8F%A3%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/</link>
+      <link>http://pengkk27.github.io/post/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E8%AE%AF%E9%A3%9E%E6%8E%A5%E5%8F%A3%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/</link>
       <pubDate>Fri, 03 Sep 2021 21:06:35 +0800</pubDate>
       
-      <guid>https://pengkk27.github.io/post/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E8%AE%AF%E9%A3%9E%E6%8E%A5%E5%8F%A3%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/</guid>
+      <guid>http://pengkk27.github.io/post/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E8%AE%AF%E9%A3%9E%E6%8E%A5%E5%8F%A3%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB/</guid>
       <description>之前看过网上其他几位使用讯飞的接口来做微信小程序的。在自己实际跟着别人的博客做的时候，却又会遇到一些问题。所以在此对使用讯飞接口做一个总结。这里我是用WebAPI来做。  1. 申请科大讯飞的接口 科大讯飞的官方网站
 进入官网之后，登陆账号（如果没有，可以注册使用）。
 登陆之后，点击右上角的控制台。进入控制中心，创建新应用 填写好信息之后便可创建一个新的应用。之后进入这个应用，并且会在左上角看到三个信息：

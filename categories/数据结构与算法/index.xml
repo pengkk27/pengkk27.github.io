@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>数据结构与算法 on pengkk27</title>
-    <link>https://pengkk27.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</link>
+    <link>http://pengkk27.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</link>
     <description>Recent content in 数据结构与算法 on pengkk27</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Aug 2021 19:45:14 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 19:45:14 +0800</lastBuildDate><atom:link href="http://pengkk27.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>排序对数期</title>
-      <link>https://pengkk27.github.io/post/%E6%8E%92%E5%BA%8F%E5%AF%B9%E6%95%B0%E6%9C%9F/</link>
+      <link>http://pengkk27.github.io/post/%E6%8E%92%E5%BA%8F%E5%AF%B9%E6%95%B0%E6%9C%9F/</link>
       <pubDate>Sun, 01 Aug 2021 19:45:14 +0800</pubDate>
       
-      <guid>https://pengkk27.github.io/post/%E6%8E%92%E5%BA%8F%E5%AF%B9%E6%95%B0%E6%9C%9F/</guid>
+      <guid>http://pengkk27.github.io/post/%E6%8E%92%E5%BA%8F%E5%AF%B9%E6%95%B0%E6%9C%9F/</guid>
       <description>&lt;p&gt;在学习排序算法的时候，通常需要进行预先设置一个数列，来对其进行排序。但是这个人为设置的数组比较小，对整个排序算法的测试并不是很全面。所以可以编写一个对数器，来对排序算法进行验证。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>排序算法笔记</title>
-      <link>https://pengkk27.github.io/post/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/</link>
+      <link>http://pengkk27.github.io/post/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Sun, 01 Aug 2021 19:45:04 +0800</pubDate>
       
-      <guid>https://pengkk27.github.io/post/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://pengkk27.github.io/post/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;h1 id=&#34;排序算法种类&#34;&gt;排序算法种类&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;选择排序&lt;/li&gt;
@@ -38,19 +38,19 @@
     
     <item>
       <title>简单递归</title>
-      <link>https://pengkk27.github.io/post/%E7%AE%80%E5%8D%95%E9%80%92%E5%BD%92/</link>
+      <link>http://pengkk27.github.io/post/%E7%AE%80%E5%8D%95%E9%80%92%E5%BD%92/</link>
       <pubDate>Sun, 01 Aug 2021 19:44:54 +0800</pubDate>
       
-      <guid>https://pengkk27.github.io/post/%E7%AE%80%E5%8D%95%E9%80%92%E5%BD%92/</guid>
+      <guid>http://pengkk27.github.io/post/%E7%AE%80%E5%8D%95%E9%80%92%E5%BD%92/</guid>
       <description>&lt;p&gt;直接或间接的调用自身，这就是递归。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Java哈希表</title>
-      <link>https://pengkk27.github.io/post/java%E5%93%88%E5%B8%8C%E8%A1%A8/</link>
+      <link>http://pengkk27.github.io/post/java%E5%93%88%E5%B8%8C%E8%A1%A8/</link>
       <pubDate>Sun, 01 Aug 2021 19:44:05 +0800</pubDate>
       
-      <guid>https://pengkk27.github.io/post/java%E5%93%88%E5%B8%8C%E8%A1%A8/</guid>
+      <guid>http://pengkk27.github.io/post/java%E5%93%88%E5%B8%8C%E8%A1%A8/</guid>
       <description>&lt;p&gt;Java中，哈希表有两种：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;只存放值，没有伴随的数据&lt;/li&gt;
@@ -60,10 +60,10 @@
     
     <item>
       <title>斐波那契数列</title>
-      <link>https://pengkk27.github.io/post/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</link>
+      <link>http://pengkk27.github.io/post/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</link>
       <pubDate>Sun, 01 Aug 2021 11:53:28 +0800</pubDate>
       
-      <guid>https://pengkk27.github.io/post/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</guid>
+      <guid>http://pengkk27.github.io/post/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</guid>
       <description>斐波那契数列 斐波那契数列是一个最基础的题目。
 方法一 我都遇到这个题目的第一个想法是，使用一个循环，然后让它每次去计算，直到计算到我们想要找的第几个数为止。
 也就是一边计数，一边计算数组的值。
@@ -74,19 +74,19 @@ public class Solution { public int Fibonacci(int n) { if (n == 0 || n == 1) { re
     
     <item>
       <title>单链表</title>
-      <link>https://pengkk27.github.io/post/%E5%8D%95%E9%93%BE%E8%A1%A8/</link>
+      <link>http://pengkk27.github.io/post/%E5%8D%95%E9%93%BE%E8%A1%A8/</link>
       <pubDate>Sun, 01 Aug 2021 11:45:34 +0800</pubDate>
       
-      <guid>https://pengkk27.github.io/post/%E5%8D%95%E9%93%BE%E8%A1%A8/</guid>
+      <guid>http://pengkk27.github.io/post/%E5%8D%95%E9%93%BE%E8%A1%A8/</guid>
       <description>单链表特性分析  链表是一种有序的列表。他是以节点的形式来存储。所以在他的每一个节点里面，需要有一个next域来将其他的节点进行连接。 链表的存储在内存中并不是连续的。 链表分为有头节点的链表和没有头节点的链表。（这里我们讲有头节点的链表）。  单链表的代码分析 创建节点 这里我们使用一个学生类来作为我们的节点。 class Student { private String name; // 学生的姓名  private int id; // 学生的学号  private Student next; // 节点的next域  public Student(String name, int id) { this.name = name; this.id = id; } @Override public String toString() { return &amp;#34;Student{&amp;#34; + &amp;#34;name=&amp;#39;&amp;#34; + name + &amp;#39;\&amp;#39;&amp;#39; + &amp;#34;, id=&amp;#34; + id + &amp;#39;}&amp;#39;; } } 然后我们来写一个链表类，命名为LinkedList，并且在链表类中创建一个头节点，方便我们对链表进行操作。 class LinkedList { private Student head = new Student(&amp;#34;&amp;#34;, 0); } 接着我们就要在这个链表类中添加操作链表的方法了。  因为每次操作链表的时候，头节点是不可以移动的，所以我们在方法中定义一个辅助节点来对链表更方便的操作。 其中的while循环用来遍历节点，直到找到需要操作的节点  添加节点 直接在链表结尾添加节点 // 这个插入方法不会考虑每个节点中的编号的顺序。直接将新的节点插入到最后。  public void add(Student student) { Student temp = head; while (true) { if (temp.</description>
     </item>
     
     <item>
       <title>循环队列</title>
-      <link>https://pengkk27.github.io/post/%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97/</link>
+      <link>http://pengkk27.github.io/post/%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97/</link>
       <pubDate>Sun, 01 Aug 2021 11:44:49 +0800</pubDate>
       
-      <guid>https://pengkk27.github.io/post/%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97/</guid>
+      <guid>http://pengkk27.github.io/post/%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97/</guid>
       <description>为了防止直接使用数组来实现一个队列中的缺点：
  队列（数组）只能使用一次。在队列中存放数据，取出数据后的空间不能再次使用。  我们可以使用循环队列。
  循环队列，我们通过这个名称不觉的联想到一个圆。所以，我们不妨就把它当作一个圆形来看。 这个时候又出现了一个问题：如何用代码来实现这个圆形呢？ 接下来就要引出一个运算符：% —— 求模
@@ -100,10 +100,10 @@ public class Solution { public int Fibonacci(int n) { if (n == 0 || n == 1) { re
     
     <item>
       <title>队列</title>
-      <link>https://pengkk27.github.io/post/%E9%98%9F%E5%88%97/</link>
+      <link>http://pengkk27.github.io/post/%E9%98%9F%E5%88%97/</link>
       <pubDate>Sun, 01 Aug 2021 11:44:17 +0800</pubDate>
       
-      <guid>https://pengkk27.github.io/post/%E9%98%9F%E5%88%97/</guid>
+      <guid>http://pengkk27.github.io/post/%E9%98%9F%E5%88%97/</guid>
       <description>在现实中，我们去银行办理业务的时候就需要排队。你来的早，排在前面，就会越早的离开。而在你排的队就是一个队列。 队列是个有序列表，它遵循先进先出的原则。
  根据队列的先进先出的原则，我们就可以用代码来实现一个队列。
  首先在一个ArrayQueue类中创建一个数组来代表一个队列  private int[] arrayQueue; // 创建一个数组  private int maxSize; // 队列的最大长度  private int front; // 队头  private int rear; // 队尾 然后我们要将这些信息进行初始化  public ArrayQueue(int max) { this.maxSize = max; // 获取队列的长度用来初始化队列  this.arrayQueue = new int[maxSize]; this.front = -1; //一开始都是没有数据，所以头和尾都为-1  this.rear = -1; } 然后是对队列的一些操作  // 判断队列是否已满  // 当队尾到达最大值时，队列已满（ 数组能储存的最大下标为 n - 1 ）  public boolean isFull() { return rear == maxSize - 1; } // 判断队列是否为空  // 当队头和队尾在同一位置时，则说明队列中间没有内容，即为空。  public boolean isEmpty() { return front == rear; } // 添加数据  // 添加数据时要先判断队列是否已满  public void addQueue(int n) { if(isFull()){ System.</description>
@@ -111,10 +111,10 @@ public class Solution { public int Fibonacci(int n) { if (n == 0 || n == 1) { re
     
     <item>
       <title>判断素数</title>
-      <link>https://pengkk27.github.io/post/%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0/</link>
+      <link>http://pengkk27.github.io/post/%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0/</link>
       <pubDate>Sun, 01 Aug 2021 11:42:44 +0800</pubDate>
       
-      <guid>https://pengkk27.github.io/post/%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0/</guid>
+      <guid>http://pengkk27.github.io/post/%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0/</guid>
       <description>素数的定义 素数：又称质数。是大于1自然数中的除了自身和1以外不能别其他数整除的数字。
  第一种方法 利用这个素数的定义，我们可以得出第一种判断素数的方法：
 int isPrime1(int n) { int i = 0; //2是素数  if(n &amp;lt;= 3) return n &amp;gt; 1; //当n不能被除了1和n自身整除的数外的数是素数  for(i = 2; i &amp;lt; n; i ++) { if(n % i == 0) return 0; } return 1; } 这个方法是最简单的判断方法，它使用一个for循环来让n一次次的除以小于n的每个数，如果除尽了的话，就不满足素数的定义。 但是这个方法也是计算量最大的。它总共会计算n-2次。

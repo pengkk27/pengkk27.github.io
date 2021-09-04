@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>素数 on pengkk27</title>
-    <link>https://pengkk27.github.io/tags/%E7%B4%A0%E6%95%B0/</link>
+    <link>http://pengkk27.github.io/tags/%E7%B4%A0%E6%95%B0/</link>
     <description>Recent content in 素数 on pengkk27</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Aug 2021 11:42:44 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/%E7%B4%A0%E6%95%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 11:42:44 +0800</lastBuildDate><atom:link href="http://pengkk27.github.io/tags/%E7%B4%A0%E6%95%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>判断素数</title>
-      <link>https://pengkk27.github.io/post/%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0/</link>
+      <link>http://pengkk27.github.io/post/%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0/</link>
       <pubDate>Sun, 01 Aug 2021 11:42:44 +0800</pubDate>
       
-      <guid>https://pengkk27.github.io/post/%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0/</guid>
+      <guid>http://pengkk27.github.io/post/%E5%88%A4%E6%96%AD%E7%B4%A0%E6%95%B0/</guid>
       <description>素数的定义 素数：又称质数。是大于1自然数中的除了自身和1以外不能别其他数整除的数字。
  第一种方法 利用这个素数的定义，我们可以得出第一种判断素数的方法：
 int isPrime1(int n) { int i = 0; //2是素数  if(n &amp;lt;= 3) return n &amp;gt; 1; //当n不能被除了1和n自身整除的数外的数是素数  for(i = 2; i &amp;lt; n; i ++) { if(n % i == 0) return 0; } return 1; } 这个方法是最简单的判断方法，它使用一个for循环来让n一次次的除以小于n的每个数，如果除尽了的话，就不满足素数的定义。 但是这个方法也是计算量最大的。它总共会计算n-2次。
