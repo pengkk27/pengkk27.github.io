@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Java on pengkk27&#39;blog</title>
+        <link>https://pengkk27.github.io/tags/java/</link>
+        <description>Recent content in Java on pengkk27&#39;blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Tue, 28 Feb 2023 12:38:01 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>JDK安装和配置</title>
+        <link>https://pengkk27.github.io/p/jdk%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</link>
+        <pubDate>Tue, 28 Feb 2023 12:38:01 +0800</pubDate>
+        
+        <guid>https://pengkk27.github.io/p/jdk%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;h1 id=&#34;jdk简单介绍&#34;&gt;JDK简单介绍&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;JDK Java开发工具包&lt;/li&gt;
+&lt;li&gt;JRE Java运行环境&lt;/li&gt;
+&lt;li&gt;JVM Java虚拟机&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;下载jdk&#34;&gt;下载JDK&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni0xYTY1NjJjMjFhMDgxNGViLnBuZw?x-oss-process=image/format,png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;1.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.oracle.com/java/technologies/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Orale官网&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://repo.huaweicloud.com/java/jdk/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;华为开源镜像站&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;由于在国内官网的下载速度比较慢，所以建议用华为镜像站来进行下载JDK。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;安装jdk&#34;&gt;安装JDK&lt;/h1&gt;
+&lt;p&gt;安装JDK&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni02MzlmMWQwMDVhYzBlNDUwLmpwZw?x-oss-process=image/format,png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;2.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;选择JDK所要安装到的文件目录&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni1mMTBjY2VhZDVmMGVhYWE0LmpwZw?x-oss-process=image/format,png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;3.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni1hOWZhMjViNWIxNDU3ODk2LmpwZw?x-oss-process=image/format,png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;4.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni1jNDcyNjE0NzUyMTQ4ZmVhLmpwZw?x-oss-process=image/format,png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;5.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;安装完成&lt;/p&gt;
+&lt;p&gt;还有一种情况是压缩包的形式，只要将压缩包下载之后进行解压就可以继续下面的步骤。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;配置java环境变量&#34;&gt;配置Java环境变量&lt;/h1&gt;
+&lt;p&gt;右击此电脑，点击属性，进入高级系统设置&lt;/p&gt;
+&lt;p&gt;点击高级下面的环境变量&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni0xMTkwZTgxYzkyNjU3Zjg1LnBuZw?x-oss-process=image/format,png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;8.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在下面的系统变量中找到path，双击进入&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni0xMDk4ZmY1YmU3MGE1ZmU5LnBuZw?x-oss-process=image/format,png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;9.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;点击新建，将刚才安装JDK的目录复制进去，点击确定
+(这里其实是放的JAVA_HOME，当然，这样放也是没有问题的)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni0yNDFhN2U3MmUyM2RjYzhiLnBuZw?x-oss-process=image/format,png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;10.png&#34;
+	
+	
+&gt;
+在系统变量中点击新建，
+变量名为 &lt;strong&gt;classpath&lt;/strong&gt;
+变量值为 &lt;strong&gt;.%JAVA_HOME%\lib\tools.jar;%JAVA_HOME%\lib\dt.jar&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni0yYTdkNmQ2NjZkMzViYzc1LnBuZw?x-oss-process=image/format,png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;11.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;再次新建，
+变量名为 &lt;strong&gt;JAVA_HOME&lt;/strong&gt;
+变量值填入JDK安装的地址&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni05NjRiMjY5NmYyYmU5OTVmLnBuZw?x-oss-process=image/format,png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;12.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;打开命令行
+输入&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;javac&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;然后回车，如图显示，即为配置完成&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni1iMDhkNzY2NmZiMjBjYzJhLnBuZw?x-oss-process=image/format,png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;13.png&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;接着输入&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;java&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;回车，如图显示即为配置完成&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni00ODI3OTE4N2RmMTBhNDM4LmpwZw?x-oss-process=image/format,png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;14.jpg&#34;
+	
+	
+&gt;&lt;/p&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
