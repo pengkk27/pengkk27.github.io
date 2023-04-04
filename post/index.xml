@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on pengkk27&#39;blog</title>
-        <link>https://pengkk27.github.io/post/</link>
+        <link>http://pengkk27.github.io/post/</link>
         <description>Recent content in Posts on pengkk27&#39;blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 28 Feb 2023 12:38:01 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 Feb 2023 12:38:01 +0800</lastBuildDate><atom:link href="http://pengkk27.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>JDK安装和配置</title>
-        <link>https://pengkk27.github.io/p/jdk%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</link>
+        <link>http://pengkk27.github.io/p/jdk%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Tue, 28 Feb 2023 12:38:01 +0800</pubDate>
         
-        <guid>https://pengkk27.github.io/p/jdk%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</guid>
+        <guid>http://pengkk27.github.io/p/jdk%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</guid>
         <description>&lt;h1 id=&#34;jdk简单介绍&#34;&gt;JDK简单介绍&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;JDK Java开发工具包&lt;/li&gt;

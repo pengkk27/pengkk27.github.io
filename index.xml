@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>pengkk27&#39;blog</title>
-        <link>https://pengkk27.github.io/</link>
+        <link>http://pengkk27.github.io/</link>
         <description>Recent content on pengkk27&#39;blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 28 Feb 2023 12:38:01 +0800</lastBuildDate><atom:link href="https://pengkk27.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 Feb 2023 12:38:01 +0800</lastBuildDate><atom:link href="http://pengkk27.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>JDK安装和配置</title>
-        <link>https://pengkk27.github.io/p/jdk%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</link>
+        <link>http://pengkk27.github.io/p/jdk%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Tue, 28 Feb 2023 12:38:01 +0800</pubDate>
         
-        <guid>https://pengkk27.github.io/p/jdk%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</guid>
+        <guid>http://pengkk27.github.io/p/jdk%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</guid>
         <description>&lt;h1 id=&#34;jdk简单介绍&#34;&gt;JDK简单介绍&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;JDK Java开发工具包&lt;/li&gt;
@@ -178,27 +178,27 @@
         </item>
         <item>
         <title>文章</title>
-        <link>https://pengkk27.github.io/archives/</link>
+        <link>http://pengkk27.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://pengkk27.github.io/archives/</guid>
+        <guid>http://pengkk27.github.io/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>关于</title>
-        <link>https://pengkk27.github.io/%E5%85%B3%E4%BA%8E/</link>
+        <link>http://pengkk27.github.io/%E5%85%B3%E4%BA%8E/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://pengkk27.github.io/%E5%85%B3%E4%BA%8E/</guid>
+        <guid>http://pengkk27.github.io/%E5%85%B3%E4%BA%8E/</guid>
         <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>链接</title>
-        <link>https://pengkk27.github.io/%E9%93%BE%E6%8E%A5/</link>
+        <link>http://pengkk27.github.io/%E9%93%BE%E6%8E%A5/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://pengkk27.github.io/%E9%93%BE%E6%8E%A5/</guid>
+        <guid>http://pengkk27.github.io/%E9%93%BE%E6%8E%A5/</guid>
         <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
 &lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -230,10 +230,10 @@
         </item>
         <item>
         <title>搜索</title>
-        <link>https://pengkk27.github.io/search/</link>
+        <link>http://pengkk27.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://pengkk27.github.io/search/</guid>
+        <guid>http://pengkk27.github.io/search/</guid>
         <description></description>
         </item>
         
