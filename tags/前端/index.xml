@@ -1,58 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>前端 on pengkk27&#39;blog</title>
-        <link>pengkk27.github.io/tags/%E5%89%8D%E7%AB%AF/</link>
-        <description>Recent content in 前端 on pengkk27&#39;blog</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Tue, 04 Apr 2023 22:24:50 +0800</lastBuildDate><atom:link href="pengkk27.github.io/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>ElementPlus文档本地启动</title>
-        <link>pengkk27.github.io/p/elementplus%E6%96%87%E6%A1%A3%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8/</link>
-        <pubDate>Tue, 04 Apr 2023 22:24:50 +0800</pubDate>
-        
-        <guid>pengkk27.github.io/p/elementplus%E6%96%87%E6%A1%A3%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8/</guid>
-        <description>&lt;h1 id=&#34;1-下载elementplus项目本身&#34;&gt;1. 下载ElementPlus项目本身&lt;/h1&gt;
-&lt;p&gt;ElementPlus官方项目本身是包含了最新的ElementPlus的开发文档的。这里放上ElementPlus的GitHub地址链接：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/element-plus/element-plus&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Element Plus (GitHub)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;有时候国内访问GitHub比较慢，所以这里也放下Gitee的地址：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gitee.com/element-plus/element-plus?_from=gitee_search&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Element Plus (Gitee)&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;2-启动项目&#34;&gt;2. 启动项目&lt;/h1&gt;
-&lt;p&gt;下载好项目之后，用命令行在项目中打开。在这之前要先确保你的电脑上安装了node。最好还配置了npm的国内镜像。&lt;/p&gt;
-&lt;p&gt;根据Element Plus文档可以知道，Element Plus是使用了 &lt;code&gt;pnpm&lt;/code&gt;，如果电脑上还没有安装 &lt;code&gt;pnpm&lt;/code&gt;，就先使用如下的命令安装&lt;code&gt;pnpm&lt;/code&gt;：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i pnpm -g
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;有了&lt;code&gt;pnpm&lt;/code&gt;，就运行下面这条命令：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pnpm i
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;这条命令会安装Element Plus项目启动时需要的依赖。&lt;/p&gt;
-&lt;p&gt;安装完所有的依赖以后，再使用命令：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pnpm docs:dev
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;这条命令就会启动项目——Element Plus的官方文档。只要是从Element Plus的官方库里面拉下来的，就是最新的文档。&lt;/p&gt;
-&lt;p&gt;这条命令运行之后会给出浏览地址，在浏览器打开就可以本地浏览ElementPlus的最新官方文档。&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
+  <channel>
+    <title>前端 on pengkk27&#39;blog</title>
+    <link>pengkk27.github.io/tags/%E5%89%8D%E7%AB%AF/</link>
+    <description>Recent content in 前端 on pengkk27&#39;blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 04 Apr 2023 22:24:50 +0800</lastBuildDate><atom:link href="pengkk27.github.io/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ElementPlus文档本地启动</title>
+      <link>pengkk27.github.io/p/elementplus%E6%96%87%E6%A1%A3%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8/</link>
+      <pubDate>Tue, 04 Apr 2023 22:24:50 +0800</pubDate>
+      
+      <guid>pengkk27.github.io/p/elementplus%E6%96%87%E6%A1%A3%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8/</guid>
+      <description>1. 下载ElementPlus项目本身 ElementPlus官方项目本身是包含了最新的ElementPlus的开发文档的。这里放上ElementPlus的GitHub地址链接：
+Element Plus (GitHub)
+有时候国内访问GitHub比较慢，所以这里也放下Gitee的地址：
+Element Plus (Gitee)
+2. 启动项目 下载好项目之后，用命令行在项目中打开。在这之前要先确保你的电脑上安装了node。最好还配置了npm的国内镜像。
+根据Element Plus文档可以知道，Element Plus是使用了 pnpm，如果电脑上还没有安装 pnpm，就先使用如下的命令安装pnpm：
+1 npm i pnpm -g 有了pnpm，就运行下面这条命令：
+1 pnpm i 这条命令会安装Element Plus项目启动时需要的依赖。
+安装完所有的依赖以后，再使用命令：
+1 pnpm docs:dev 这条命令就会启动项目——Element Plus的官方文档。只要是从Element Plus的官方库里面拉下来的，就是最新的文档。
+这条命令运行之后会给出浏览地址，在浏览器打开就可以本地浏览ElementPlus的最新官方文档。</description>
+    </item>
+    
+  </channel>
 </rss>

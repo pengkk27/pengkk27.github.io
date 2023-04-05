@@ -1,288 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>pengkk27&#39;blog</title>
-        <link>pengkk27.github.io/</link>
-        <description>Recent content on pengkk27&#39;blog</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Tue, 04 Apr 2023 22:24:50 +0800</lastBuildDate><atom:link href="pengkk27.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>ElementPlus文档本地启动</title>
-        <link>pengkk27.github.io/p/elementplus%E6%96%87%E6%A1%A3%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8/</link>
-        <pubDate>Tue, 04 Apr 2023 22:24:50 +0800</pubDate>
-        
-        <guid>pengkk27.github.io/p/elementplus%E6%96%87%E6%A1%A3%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8/</guid>
-        <description>&lt;h1 id=&#34;1-下载elementplus项目本身&#34;&gt;1. 下载ElementPlus项目本身&lt;/h1&gt;
-&lt;p&gt;ElementPlus官方项目本身是包含了最新的ElementPlus的开发文档的。这里放上ElementPlus的GitHub地址链接：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/element-plus/element-plus&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Element Plus (GitHub)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;有时候国内访问GitHub比较慢，所以这里也放下Gitee的地址：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gitee.com/element-plus/element-plus?_from=gitee_search&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Element Plus (Gitee)&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;2-启动项目&#34;&gt;2. 启动项目&lt;/h1&gt;
-&lt;p&gt;下载好项目之后，用命令行在项目中打开。在这之前要先确保你的电脑上安装了node。最好还配置了npm的国内镜像。&lt;/p&gt;
-&lt;p&gt;根据Element Plus文档可以知道，Element Plus是使用了 &lt;code&gt;pnpm&lt;/code&gt;，如果电脑上还没有安装 &lt;code&gt;pnpm&lt;/code&gt;，就先使用如下的命令安装&lt;code&gt;pnpm&lt;/code&gt;：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm i pnpm -g
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;有了&lt;code&gt;pnpm&lt;/code&gt;，就运行下面这条命令：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pnpm i
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;这条命令会安装Element Plus项目启动时需要的依赖。&lt;/p&gt;
-&lt;p&gt;安装完所有的依赖以后，再使用命令：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pnpm docs:dev
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;这条命令就会启动项目——Element Plus的官方文档。只要是从Element Plus的官方库里面拉下来的，就是最新的文档。&lt;/p&gt;
-&lt;p&gt;这条命令运行之后会给出浏览地址，在浏览器打开就可以本地浏览ElementPlus的最新官方文档。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>JDK安装和配置</title>
-        <link>pengkk27.github.io/p/jdk%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</link>
-        <pubDate>Tue, 28 Feb 2023 12:38:01 +0800</pubDate>
-        
-        <guid>pengkk27.github.io/p/jdk%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</guid>
-        <description>&lt;h1 id=&#34;jdk简单介绍&#34;&gt;JDK简单介绍&lt;/h1&gt;
+  <channel>
+    <title>pengkk27&#39;blog</title>
+    <link>pengkk27.github.io/</link>
+    <description>Recent content on pengkk27&#39;blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 04 Apr 2023 22:24:50 +0800</lastBuildDate><atom:link href="pengkk27.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ElementPlus文档本地启动</title>
+      <link>pengkk27.github.io/p/elementplus%E6%96%87%E6%A1%A3%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8/</link>
+      <pubDate>Tue, 04 Apr 2023 22:24:50 +0800</pubDate>
+      
+      <guid>pengkk27.github.io/p/elementplus%E6%96%87%E6%A1%A3%E6%9C%AC%E5%9C%B0%E5%90%AF%E5%8A%A8/</guid>
+      <description>1. 下载ElementPlus项目本身 ElementPlus官方项目本身是包含了最新的ElementPlus的开发文档的。这里放上ElementPlus的GitHub地址链接：
+Element Plus (GitHub)
+有时候国内访问GitHub比较慢，所以这里也放下Gitee的地址：
+Element Plus (Gitee)
+2. 启动项目 下载好项目之后，用命令行在项目中打开。在这之前要先确保你的电脑上安装了node。最好还配置了npm的国内镜像。
+根据Element Plus文档可以知道，Element Plus是使用了 pnpm，如果电脑上还没有安装 pnpm，就先使用如下的命令安装pnpm：
+1 npm i pnpm -g 有了pnpm，就运行下面这条命令：
+1 pnpm i 这条命令会安装Element Plus项目启动时需要的依赖。
+安装完所有的依赖以后，再使用命令：
+1 pnpm docs:dev 这条命令就会启动项目——Element Plus的官方文档。只要是从Element Plus的官方库里面拉下来的，就是最新的文档。
+这条命令运行之后会给出浏览地址，在浏览器打开就可以本地浏览ElementPlus的最新官方文档。</description>
+    </item>
+    
+    <item>
+      <title>JDK安装和配置</title>
+      <link>pengkk27.github.io/p/jdk%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Tue, 28 Feb 2023 12:38:01 +0800</pubDate>
+      
+      <guid>pengkk27.github.io/p/jdk%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</guid>
+      <description>&lt;h1 id=&#34;jdk简单介绍&#34;&gt;JDK简单介绍&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;JDK Java开发工具包&lt;/li&gt;
 &lt;li&gt;JRE Java运行环境&lt;/li&gt;
 &lt;li&gt;JVM Java虚拟机&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;下载jdk&#34;&gt;下载JDK&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni0xYTY1NjJjMjFhMDgxNGViLnBuZw?x-oss-process=image/format,png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;1.png&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.oracle.com/java/technologies/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Orale官网&lt;/a&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://repo.huaweicloud.com/java/jdk/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;华为开源镜像站&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;由于在国内官网的下载速度比较慢，所以建议用华为镜像站来进行下载JDK。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;安装jdk&#34;&gt;安装JDK&lt;/h1&gt;
-&lt;p&gt;安装JDK&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni02MzlmMWQwMDVhYzBlNDUwLmpwZw?x-oss-process=image/format,png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;2.jpg&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;选择JDK所要安装到的文件目录&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni1mMTBjY2VhZDVmMGVhYWE0LmpwZw?x-oss-process=image/format,png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;3.jpg&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni1hOWZhMjViNWIxNDU3ODk2LmpwZw?x-oss-process=image/format,png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;4.jpg&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni1jNDcyNjE0NzUyMTQ4ZmVhLmpwZw?x-oss-process=image/format,png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;5.jpg&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;安装完成&lt;/p&gt;
-&lt;p&gt;还有一种情况是压缩包的形式，只要将压缩包下载之后进行解压就可以继续下面的步骤。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;配置java环境变量&#34;&gt;配置Java环境变量&lt;/h1&gt;
-&lt;p&gt;右击此电脑，点击属性，进入高级系统设置&lt;/p&gt;
-&lt;p&gt;点击高级下面的环境变量&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni0xMTkwZTgxYzkyNjU3Zjg1LnBuZw?x-oss-process=image/format,png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;8.png&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;在下面的系统变量中找到path，双击进入&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni0xMDk4ZmY1YmU3MGE1ZmU5LnBuZw?x-oss-process=image/format,png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;9.png&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;点击新建，将刚才安装JDK的目录复制进去，点击确定
-(这里其实是放的JAVA_HOME，当然，这样放也是没有问题的)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni0yNDFhN2U3MmUyM2RjYzhiLnBuZw?x-oss-process=image/format,png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;10.png&#34;
-	
-	
-&gt;
-在系统变量中点击新建，
-变量名为 &lt;strong&gt;classpath&lt;/strong&gt;
-变量值为 &lt;strong&gt;.%JAVA_HOME%\lib\tools.jar;%JAVA_HOME%\lib\dt.jar&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni0yYTdkNmQ2NjZkMzViYzc1LnBuZw?x-oss-process=image/format,png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;11.png&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;再次新建，
-变量名为 &lt;strong&gt;JAVA_HOME&lt;/strong&gt;
-变量值填入JDK安装的地址&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni05NjRiMjY5NmYyYmU5OTVmLnBuZw?x-oss-process=image/format,png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;12.png&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;打开命令行
-输入&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;javac&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;然后回车，如图显示，即为配置完成&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni1iMDhkNzY2NmZiMjBjYzJhLnBuZw?x-oss-process=image/format,png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;13.png&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;接着输入&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;java&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;回车，如图显示即为配置完成&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8yMjk3MTY4Ni00ODI3OTE4N2RmMTBhNDM4LmpwZw?x-oss-process=image/format,png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;14.jpg&#34;
-	
-	
-&gt;&lt;/p&gt;</description>
-        </item>
-        <item>
-        <title>文章</title>
-        <link>pengkk27.github.io/archives/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-        
-        <guid>pengkk27.github.io/archives/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>关于</title>
-        <link>pengkk27.github.io/%E5%85%B3%E4%BA%8E/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>pengkk27.github.io/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>链接</title>
-        <link>pengkk27.github.io/%E9%93%BE%E6%8E%A5/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>pengkk27.github.io/%E9%93%BE%E6%8E%A5/</guid>
-        <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
-&lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;links&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;GitHub&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;GitHub is the world&amp;#39;s largest software development platform.&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;website&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://github.com&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;TypeScript&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;website&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;https://www.typescriptlang.org&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;ts-logo-128.jpg&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;code&gt;image&lt;/code&gt; field accepts both local and external images.&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>搜索</title>
-        <link>pengkk27.github.io/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>pengkk27.github.io/search/</guid>
-        <description></description>
-        </item>
-        
-    </channel>
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>文章</title>
+      <link>pengkk27.github.io/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>pengkk27.github.io/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>pengkk27.github.io/%E5%85%B3%E4%BA%8E/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>pengkk27.github.io/%E5%85%B3%E4%BA%8E/</guid>
+      <description>This is a test page for i18n support.</description>
+    </item>
+    
+    <item>
+      <title>链接</title>
+      <link>pengkk27.github.io/%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>pengkk27.github.io/%E9%93%BE%E6%8E%A5/</guid>
+      <description>To use this feature, add links section to frontmatter.
+This page&amp;rsquo;s frontmatter:
+1 2 3 4 5 6 7 8 9 links: - title: GitHub description: GitHub is the world&amp;#39;s largest software development platform. website: https://github.com image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png - title: TypeScript description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. website: https://www.typescriptlang.org image: ts-logo-128.jpg image field accepts both local and external images.</description>
+    </item>
+    
+    <item>
+      <title>搜索</title>
+      <link>pengkk27.github.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>pengkk27.github.io/search/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
 </rss>
